@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			.item-body{
+				text-indent: 30px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-ios-arrow-back"></button>
+			<h1 class="title">消息</h1>
+			<button class="button button-clear">删除</button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y:scroll ;">
+			
+			<div class="list">
+				<a class="item">
+					<p>保养小妙招</p>
+			    	<span>2016-04-10-21:07</span>
+			    	<span class="item-note">美的官方</span>
+				</a>
+				<div class="item">
+					<span class="item-body">5月撒哈斯卡十点半不长时间才必须从看着办上课时电脑边下次V型从V型从V型从V型从V型从vcx周星驰是废话多快睡吧vcvb看见不错机械厂</span>
+					<img src="../img/banner1.png" class="full-image"/>
+					<p>看功能多强大：</p>
+					<span class="item-body">NO.1萨斯喀金属大师不水电费第三方的顾客购买的反馈及顾客了了解的大使馆的风格的风格大范甘迪施工队法国大范甘迪发鬼地方</span></br>
+					<span class="item-body">NO.2萨斯喀金属大师不水电费第三方的顾客购买的反馈及顾客了了解的大使馆的风格的风格大范甘迪施工队法国大范甘迪发鬼地方</span></br>
+					<span class="item-body">NO.3萨斯喀金属大师不水电费第三方的顾客购买的反馈及顾客了了解的大使馆的风格的风格大范甘迪施工队法国大范甘迪发鬼地方</span></br>
+					<span class="item-body">NO.4萨斯喀金属大师不水电费第三方的顾客购买的反馈及顾客了了解的大使馆的风格的风格大范甘迪施工队法国大范甘迪发鬼地方</span></br>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

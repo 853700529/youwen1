@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+		body{
+			/*background: #D1D3D6;*/
+		}
+			.button-clear.button-clear{
+				color: #000000;
+				font-size: 26px;
+			}
+			.item-input-wrapper{
+				background: #fff;
+			}
+			.item.item-positive{
+				width: 100%;
+			}
+			.padding{
+				margin: 50px auto ;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-positive">
+		<div class="item item-input-inset item-positive">
+			<label class="item-input-wrapper">
+				<i class="icon ion-search positive"></i>
+				<input type="text" placeholder="请输入您的关键字" />
+			</label>
+			<button class="button button-small button-clear dark">搜索</button>
+		</div>
+		</div>
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+		<div class="padding">
+				<button class="button button-dark button-block button-clear"><i class="icon ion-alert-circled"></i>抱歉没有找到改标签</button>
+			</div>
+		</div>
+	</body>
+	<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+</html>

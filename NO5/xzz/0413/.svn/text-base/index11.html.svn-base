@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				background-image: url(img/2.jpg);
+				background-repeat: no-repeat;
+				font-family: "微软雅黑";	
+				background-color: #eee;
+			}
+			.myColor{
+				opacity: 0.5;
+			}
+			.myImg{
+				margin-right: 40px;
+				margin-top: 5px;
+			}
+			.mgMar{
+				margin-top: 250px;
+			}
+			/*h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+				color: #FFFFFF;
+			}*/
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header myColor">
+			<a class="button icon ion-search myColor"></a>
+			<h3 class="title">数码专区</h3>
+			<a class="button icon ion-android-menu myColor"></a>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			
+			<div class="list mgMar">
+				<h3 class="item item-body"> 三星电子的环境的伤口恢复的不v恐怖v局发布科技部v女会计报表举得觉得发顺风顺丰顺风顺丰顺丰沙发沙发沙发</h3>
+			</div>
+			<div class="list">
+				<div class="item item-divider">视频列表</div>
+				<div class="list">
+					<div class="item item-icon-left item-icon-right calm">
+						<i class="icon ion-home calm"></i>
+						中国三星电子
+						<span class="badge myImg">
+							<i class="icon ion-ios-film positive"></i>
+						</span>
+						<i class="icon ion-android-list energized"></i>
+					</div>
+					<a class="item item-thumbnail-left  item-icon-right" href="#">
+				      	<img src="img/wd_03.jpg">
+				      	<span class="item-body">商品名称商品名称商</span>
+				      	<span class="item-body">ssj世界上就开始考虑是内存中参考着参了课程中小客车战略性课程了自产自销流程控制了新课程</span>
+				    </a>
+					<div class="item item-icon-right">
+						<div class="row">
+							<div class="col col-20">
+								<i class="ion-android-playstore">1230</i>
+							</div>
+							<div class="col col-20 col-offset-10">
+								<i class="ion-heart">198</i>
+							</div>
+							<div class="col col-20 col-offset-10">
+								<i class="ion-email">2345</i>
+							</div>
+						</div>
+						<i class="icon ion-android-open"></i>
+					</div>
+					
+				</div>
+				
+				<div class="list">
+					<a class="item item-thumbnail-left  item-icon-right" href="#">
+				      	<img src="img/wd_03.jpg">
+				      	<span class="item-body">商品名称商品名称商</span>
+				      	<span class="item-body">ssj世界上就开始考虑是内存中参考着参了课程中小客车战略性课程了自产自销流程控制了新课程</span>
+				    </a>
+					<div class="item item-icon-right">
+						<div class="row">
+							<div class="col col-20">
+								<i class="ion-android-playstore">1230</i>
+							</div>
+							<div class="col col-20 col-offset-10">
+								<i class="ion-heart">198</i>
+							</div>
+							<div class="col col-20 col-offset-10">
+								<i class="ion-email">2345</i>
+							</div>
+						</div>
+						<i class="icon ion-android-open"></i>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

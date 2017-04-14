@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/ionic.css" />
+		<style>
+			.tabs .tab-item .badge.badge-assertive,
+			.badge.badge-assertive {
+				margin-right: -12px;
+			}
+			body{
+				background: #EEEEEE;
+			}
+			.myc{
+				background: skyblue;
+			}
+			.button-clear.button-clear{
+				color: #fff;
+				font-size: 14px;
+			}
+			.item-input-wrapper{
+				background: #fff;
+			} 
+			.myit{
+				background-image:url(img/1491365440.jpg) ;
+				background-size:100%;
+				background-repeat: no-repeat;
+				height: 130px;
+			}
+			.myit1{
+				background-image:url(img/s1.jpg) ;
+				background-size:100%;
+				background-repeat: no-repeat;
+				height: 130px;
+			}
+			.myit2{
+				background-image:url(img/s2.jpg) ;
+				background-size:100%;
+				background-repeat: no-repeat;
+				height: 130px;
+			}
+			.myit3{
+				background-image:url(img/s3.jpg) ;
+				background-size:100%;
+				background-repeat: no-repeat;
+				height: 130px;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCon">
+		
+		<div class="bar bar-header bar-assertive">
+			<button class="button button-clear icon ion-ios-arrow-back "></button>
+			<h3 class="title">LOL资讯</h3>
+			<button class="button button-clear icon ion-more "></button>
+		</div>
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			
+			<div class="list">
+				<div class="item myit">
+					
+					
+				</div>
+			</div>
+			<div class="list">
+				<div class="item myit1">
+					
+					<span style="line-height: 100px;text-align: center;color: #fff;margin-left: 80px;font-size: 24px;font-weight: bold;">卡牌大师！</span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item myit2">
+					
+					<span style="line-height: 100px;text-align: center;color: #fff;margin-left: 90px;font-size: 24px;font-weight: bold;">金克丝！</span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item myit3">
+					
+					<span style="line-height: 100px;text-align: center;color: #fff;margin-left: 80px;font-size: 24px;font-weight: bold;">疾风剑豪！</span>
+				</div>
+			</div>
+			
+			
+		</div>
+	</body>
+	<script>
+		var myApp = angular.module("myApp", ["ionic"]);
+
+		myApp.controller("myCon", function($scope) {
+				
+		});
+	</script>
+
+</html>

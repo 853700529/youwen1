@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			.item-input-wrapper{
+				background: #fff;
+			}
+		</style>
+	</head>
+	<body ng-controller="mycon" style="background: #F5F5F5;">
+			<div class="bar bar-header bar-positive item-input-inset">
+			  	<label class="item-input-wrapper">
+					<i class="icon ion-android-search placeholder-icon"></i>
+					<input type="search" placeholder="搜索">
+					<i class="icon ion-android-close placeholder-icon"></i>
+			  	</label>
+			  	<button class="button button-clear">取消</button>
+			</div>
+			<div class="content has-header scroll scroll-content" style="overflow-y:scroll">
+				<div class="list">
+					<div class="item">
+						<i class="icon ion-home positive"> 中国三星电子</i>
+					</div>
+					<div class="item item-body">
+						<div class=" item-thumbnail-left">
+							<img src="img/wares2.png" style="min-width: 100px;margin-top: 25px;" />
+							<h3>标题标题标题标题标题标题</h3>
+							<p>介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍</p>
+						</div>
+					</div>
+					<div class="item tabs tabs-icon-left">
+						<div class="tab-item">
+							<i class="icon ion-cloud"></i>1230
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-favorite"></i>198
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-textsms"></i>2345
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-open"></i>
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="item">
+						<i class="icon ion-home positive"> 中国三星电子</i>
+					</div>
+					<div class="item item-body">
+						<div class=" item-thumbnail-left">
+							<img src="img/wares2.png" style="min-width: 100px;margin-top: 25px;" />
+							<h3>标题标题标题标题标题标题</h3>
+							<p>介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍</p>
+						</div>
+					</div>
+					<div class="item tabs tabs-icon-left">
+						<div class="tab-item">
+							<i class="icon ion-cloud"></i>1230
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-favorite"></i>198
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-textsms"></i>2345
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-open"></i>
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="item">
+						<i class="icon ion-home positive"> 中国三星电子</i>
+					</div>
+					<div class="item item-body">
+						<div class=" item-thumbnail-left">
+							<img src="img/wares2.png" style="min-width: 100px;margin-top: 25px;" />
+							<h3>标题标题标题标题标题标题</h3>
+							<p>介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍品牌介绍</p>
+						</div>
+					</div>
+					<div class="item tabs tabs-icon-left">
+						<div class="tab-item">
+							<i class="icon ion-cloud"></i>1230
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-favorite"></i>198
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-textsms"></i>2345
+						</div>
+						<div class="tab-item">
+							<i class="icon ion-android-open"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		<script>
+			var app=angular.module("app",["ionic"]);
+			app.controller("mycon",["$scope",function($scope){
+				
+			}])
+		</script>
+	</body>
+</html>

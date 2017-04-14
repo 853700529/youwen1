@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body{
+				background:url(img/0.jpg) no-repeat;
+				background-size:cover;
+			}
+			.item{
+				background-color:rgba(0,0,0,0);
+			}
+			.item-body{
+				border:none;
+				height: 200px;
+			}
+			.item-thumbnail-left>.pic:first-child{
+				border-radius: 50%;
+				left: 40%; 
+				margin-top: 40px;
+				border: 3px solid #fff;
+			}
+			.button{
+				background-color:#fff;
+			}
+			.button-bar>.button:last-child{
+				border-radius:0 12px 12px 0;
+			}
+			.button-bar>.button:first-child{
+				border-radius: 12px 0 0 12px ;
+			}
+			.myColor{
+				color:#ddd;
+			}
+			.textColor{
+				color:#fff;
+			}
+		</style>
+	</head>
+	<body ng-controller="mycon">
+			 <div class="bar bar-header bar-clear">
+			 	<div class="button button-clear icon ion-ios-home-outline"></div>
+			 	<div class="title">乐趣做</div>
+			 	<div class="button button-clear icon ion-ios-person-outline"></div>
+			 </div>
+			 <div class="content has-header scroll scroll-content" style="overflow-y:scroll">
+				 <div class="list">
+				 	<div class="item item-thumbnail-left item-body">
+				 		<img src="img/3.jpg" alt="" class="pic" />
+				 		<p style="padding-top: 120px;text-align: center;color:#fff;">无师自通-创业中</p>
+				 	</div>
+				 	<div class="button-bar button-block padding">
+				 		<button class="button">100</button>
+				 		<button class="button">100</button>
+				 		<button class="button">150</button>				 	
+				 	</div>
+				 </div>
+			 	<div class="list" style="background: rgba(255,255,255,.8);">
+			 		<div class="item item-body" style="border-bottom: 1px solid #fff;">
+			 			<span>
+			 				<span>2016-06-16 14:20</span>
+			 				<i class="item-note icon ion-ios-trash-outline assertive"></i>
+			 			</span>
+			 			<div class="item-thumbnail-left">
+			 				<img src="img/wares2.png" style="margin-top: 50px;min-width: 100px;"/>
+		 					<h2>标题标题标题标题标题</h2>
+		 					<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+			 			</div>
+			 		</div>
+					<div class="item item-body" style="border-bottom: 1px solid #fff;">
+			 			<span>
+			 				<span>2016-06-16 14:20</span>
+			 				<i class="item-note icon ion-ios-trash-outline assertive"></i>
+			 			</span>
+			 			<div class="item-thumbnail-left">
+			 				<img src="img/wares2.png" style="margin-top: 50px;min-width: 100px;"/>
+		 					<h2>标题标题标题标题标题</h2>
+		 					<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+			 			</div>
+			 		</div>
+					<div class="item item-body" style="border-bottom: 1px solid #fff;">
+			 			<span>
+			 				<span>2016-06-16 14:20</span>
+			 				<i class="item-note icon ion-ios-trash-outline assertive"></i>
+			 			</span>
+			 			<div class="item-thumbnail-left">
+			 				<img src="img/wares2.png" style="margin-top: 50px;min-width: 100px;"/>
+		 					<h2>标题标题标题标题标题</h2>
+		 					<p>这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍这是介绍</p>
+			 			</div>
+			 		</div>	
+				</div>
+			 </div>
+		<script>
+			var app=angular.module("app",["ionic"]);
+			app.controller("mycon",["$scope",function($scope){
+				
+			}])
+		</script>
+	</body>
+</html>

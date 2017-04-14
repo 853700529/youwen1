@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				font-family: "微软雅黑";	
+				background-color: #eee;
+			}
+			.myImg{
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 150px;
+				padding-top: 50px;
+			}
+			.myImg1{
+				background-image: url(img/2.jpg);
+			}
+			.myImg2{
+				background-image: url(img/1.jpg);
+			}
+			.myImg3{
+				background-image: url(img/3.jpg);
+			}
+			.myImg4{
+				background-image: url(img/banner1.png);
+			}
+			h2,h4{
+				text-align: center;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<a class="button button-clear icon ion-home "></a>
+			<h3 class="title">智能管家</h3>
+			<a class="button button-clear icon ion-person"></a>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				<div class="myImg myImg1">
+					<h2>数码专区</h2>
+					<h4>省时省力省心</h4>
+				</div>
+			</div>
+			<div class="list">
+				<div class="myImg myImg2">
+					<h2>交通专区</h2>
+					<h4>省时省力省心</h4>
+				</div>
+			</div>
+			<div class="list">
+				<div class="myImg myImg3">
+					<h2>家电专区</h2>
+					<h4>省时省力省心</h4>
+				</div>
+			</div>
+			<div class="list">
+				<div class="myImg myImg4">
+					<h2>厨卫系列</h2>
+					<h4>省时省力省心</h4>
+				</div>
+			</div>
+			<div class="list">
+				<div class="myImg myImg1">
+					<h2>数码专区</h2>
+					<h4>省时省力省心</h4>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

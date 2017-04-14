@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-android-arrow-back"></button>
+			<h1 class="title">添加设备</h1>
+			<button class="button button-clear">确认</button>
+		</div>
+		
+		<div class="content has-header">
+			
+			<div class="list">
+				<a class="item item-icon-right">
+				          设备分类
+				    <span class="item-note">无家电>大家电>洗衣机</span>	
+					<i class="icon ion-ios-arrow-forward"></i> 
+				 </a>
+				<a class="item item-icon-right">
+					品牌选择
+					<span class="item-note">飞利浦</span>	
+					<span class="icon ion-ios-arrow-forward"></span>
+				</a>
+				<a class="item item-icon-right">
+					选择型号
+					<span class="item-note">MH3750</span>	
+					<span class="icon ion-ios-arrow-forward"></span>
+				</a>
+				<a class="item item-icon-right">
+					选择型号
+					<span class="item-note">100ML</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</a>
+				<a class="item item-icon-right">
+					颜色选择
+					<span class="item-note">白色</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</a>
+				<a class="item item-icon-right">
+					购买日期
+					<span class="item-note">2016-04-10</span>
+					<span class="icon ion-ios-arrow-forward"></span>
+				</a>
+				
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

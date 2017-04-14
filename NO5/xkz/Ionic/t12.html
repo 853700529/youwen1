@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/ionic.css"/>
+		<style>
+			.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive{
+				margin-right: -12px;
+			}
+			body{
+				background: #eee;
+			}
+			.myt{
+				color: #ccc;
+				font-family: "微软雅黑";
+			}
+			.myx{
+				margin-left: -90px;
+			}
+			a.item{
+				color: #ccc;
+			}
+			.myc{
+				color: #E5E5E5;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-ios-arrow-back"></button>
+			<h3 class="title myt">添加设备</h3>
+			<button class="button button-clear icon ion-android-add"></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+		<ul class="list ">
+			
+			<a class="item myt item-icon-right">
+				设备分类
+				<span class="item-note">大家电</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+			
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item myt item-icon-right">
+				品牌选择
+				<span class="item-note">飞利浦</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item myt item-icon-right">
+				选择型号
+				<span class="item-note">MH3750</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item myt item-icon-right">
+				选择规格
+				<span class="item-note">100ML</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item myt item-icon-right">
+				颜色选择
+				<span class="item-note">白色</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+		</ul>
+		<ul class="list">
+			
+			<a class="item myt item-icon-right">
+				购买日期
+				<span class="item-note">2017-04-11</span>
+				<i class="icon ion-ios-arrow-forward myc"></i>
+			</a>
+		</ul>
+		
+		
+		
+		
+    		
+		<div class="padding">
+		<button class="button button-block button-balanced">确定</button>
+		</div>	
+			
+		</div>
+		
+	
+	</body>
+	<script>
+		var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myCon",function() {
+					
+			});
+	</script>
+</html>

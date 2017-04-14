@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>商品列表</title>
+
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+			body{background: #ccc;}
+			.list{margin-bottom: 0px;background: white;margin-top: 10px;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear">
+				<i class="icon ion-android-search"></i>
+			</button>
+			<h1 class="title">了去做</h1>
+			<button class="button button-clear">
+				<i class="icon ion-navicon"></i>
+			</button>
+		</div>
+		
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<ul class="list">
+				<div class="row">
+				  <div class="col" style="text-align: center;"><i class="icon ion-ios-keypad-outline"></i></div>
+				  <div class="col">家电</div>
+				  <div class="col">数码</div>
+				  <div class="col">交通</div>
+				  <div class="col">家居</div>
+				  <div class="col">更多</div>
+				</div>
+			</ul>
+			<div>
+				<ul class="list">
+					<li class="item item-thumbnail-left">
+					<img src="img/monkey.jpg" alt="" />
+					<b>齐天大圣齐天大圣齐天大圣</b>
+					<span class="item-note">齐天大圣天圣圣圣齐大圣齐大圣齐大圣齐天大圣</span>
+					</li>
+					<div class="item row">
+					<div class="col col-20">1230</div>
+					<div class="col col-20">198</div>
+					<div class="col col-60 item item-icon-left item-icon-right">
+						<i class="icon ion-home"></i>
+						<span>2345</span>
+						<i class="icon ion-android-cart"></i>
+					</div>
+					</div>
+				</ul>
+				<ul class="list">
+					<li class="item item-thumbnail-left">
+					<img src="img/monkey.jpg" alt="" />
+					<b>齐天大圣齐天大圣齐天大圣</b>
+					<span class="item-note">齐天大圣天圣圣圣齐大圣齐大圣齐大圣齐天大圣</span>
+					</li>
+					<div class="item row">
+					<div class="col col-20">1230</div>
+					<div class="col col-20">198</div>
+					<div class="col col-60 item-icon-left item-icon-right">
+						<a class="subdued">2345</a>
+						<i class="icon ion-android-cart"></i>
+					</div>
+					</div>
+				</ul>
+				<ul class="list">
+					<li class="item item-thumbnail-left">
+					<img src="img/monkey.jpg" alt="" />
+					<b>齐天大圣齐天大圣齐天大圣</b>
+					<span class="item-note">齐天大圣天圣圣圣齐大圣齐大圣齐大圣齐天大圣</span>
+					</li>
+					<div class="item row">
+					<div class="col col-20">1230</div>
+					<div class="col col-20">198</div>
+					<div class="col col-60 item-icon-left item-icon-right">
+						<a class="subdued">2345</a>
+						<i class="icon ion-android-cart"></i>
+					</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myCon",function() {
+					
+			});
+		</script>
+	</body>
+</html>

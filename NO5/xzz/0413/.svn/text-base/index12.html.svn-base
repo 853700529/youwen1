@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				
+				font-family: "微软雅黑";	
+				background-color: #eee;
+			}
+			.myColor{
+				opacity: 0.5;
+			}
+			.myColor1{
+				color: #fff;
+			}
+			.myImg{
+				margin-right: 40px;
+				margin-top: 5px;
+			}
+			.mgMar{
+				background-image: url(img/2.jpg);
+				background-repeat: no-repeat;
+				padding-top: 70px;
+				width: 100%;
+				height: 200px;
+				font-size: 20px;
+			}
+			.myImg1 img{
+				width: 100px;
+				height: 100px;
+				margin-left: 40px;	
+				/*border: 1px solid red;*/
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-clear">
+			<a class="button icon ion-ios-arrow-back button-clear"></a>
+			<h3 class="title">美的345电饭煲</h3>
+			<a class="button  button-clear">删除</a>
+		</div>
+		
+		<div class="content scroll scroll-content" style="overflow-y: scroll;">
+			
+			<div class="mgMar row">
+				<div class="col col-50 myImg1">
+					<img src="img/4.jpg" alt="" />
+				</div>
+				<div class="col col-50 light">
+					设备已使用	230天</br>
+					已接受消息	100条</br>
+					已接受消息	100天</br>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-email energized"></i>
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-right">
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-right">
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-right">
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-right">
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-right">
+					使用三个月保养
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

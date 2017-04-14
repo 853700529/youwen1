@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>账户管理</title>
+
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+			body{background:url(img/2dbbfbf3353914ba11c2eff60738dd7dd37efda81fcea-5IdGDu_fw658.png) no-repeat center center ;background-position: top;}
+			.kuang{text-align: center;background: rgba(255,255,255,0.0);height: 40%;}
+			a{opacity:0.8;}
+			.msg{width: 121px;margin: 50px auto 0 auto ;border-radius: 50%;border: 5px solid #ccc;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header " style="background:rgba(255,255,255,0);">
+			<button class="button button-clear">
+				<i class="icon ion-ios-arrow-back dark"></i>
+			</button>
+			<h1 class="title">登录</h1>
+			<button class="button button-clear">
+				<i class="icon ion-navicon dark"></i>
+			</button>
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="item kuang">
+				<div>
+					<img class="msg" src="img/monkey.jpg" />
+				</div>
+			</div>
+				<ul class="list" style="height: 59%;">
+					<a href="#" class="item " style="background: rgba(255,255,255,.4);">
+						<span>联系电话</span>
+						<span style="float: right;">021-88888888</span>
+					</a>
+					<a href="#" class="item " style="background: rgba(255,255,255,.4);">
+						<span>公众账号</span>
+						<span style="float: right;">test</span>
+					</a>
+					<a href="#" class="item item-icon-right" style="background: rgba(255,255,255,.4);">
+						<span>公众账号</span>
+						<i class="icon ion-ios-arrow-forward my-color2"></i>
+					</a>
+					<a href="#" class="item " style="background: rgba(255,255,255,.4);">
+						<span>二维码</span>
+						<img src="img/timg.jpg" alt="" style="width: 20%;float: right;" />
+					</a>
+					<a href="#" class="item item-icon-right" style="background: rgba(255,255,255,.4);">
+						<span>用户协议</span>
+						<i class="icon ion-ios-arrow-forward my-color2"></i>
+					</a>
+					<div class="item" style="text-align: center;background: rgba(255,255,255,.4);" >
+						<span>Version 1.0.0</span>
+						<p>上海乐趣做信息技术有限公司</p>
+					</div>
+				</ul>
+		</div>
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myCon",function() {
+					
+			});
+		</script>
+	</body>
+</html>

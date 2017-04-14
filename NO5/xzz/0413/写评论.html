@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				font-family: "微软雅黑";
+				color: #FFFFFF;
+			}
+			
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<a class="button button-clear">取消</a>
+			<p class="title">写评论</p>
+			<a class="button button-clear">确定</a>
+			
+		</div>
+		<!--内容-->
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<textarea name="" rows="15" cols="50" placeholder="写评论"></textarea>
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

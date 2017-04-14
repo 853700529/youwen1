@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				background-image: url(img/1.jpg);
+				/*opacity: 0.7;*/
+			}
+			ul{
+				list-style: none;
+				margin-left: 40px;
+			}
+			li{
+				display: inline-block;
+				border: 1px solid red;
+				width:30%;
+				height: 50px;
+				background-color: #fff;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+			}
+			li:first-child{
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			li:last-child{
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.item-body{
+				text-indent: 30px;
+			}
+			.cont{
+				text-align: center;
+			}
+			.myImg{
+				width: 80px;
+				height: 80px;
+				margin-top: 50px;
+				border: 5px solid #eee;
+				border-radius: 50%;
+			}
+			
+			.myColor{
+				opacity: 0.5;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header myColor">
+			<button class="button icon ion-ios-search-strong"></button>
+			<h1 class="title">乐趣做</h1>
+			<button class="button ion-navicon"></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content myColor" style="overflow-y:scroll ;">
+			<div class="cont">
+				<img src="img/8.jpg" class="myImg"/>
+				<p>无师自通-创业中</p>
+			</div>
+			<ul>
+				<li >100<span>视屏</span> </li>
+				<li>100<span>视屏</span> </li>
+				<li>100<span>视屏</span> </li>
+			</ul>
+			<div class="list">
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-medkit assertive"></span>
+					账号管理
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-ios-shuffle assertive"></span>
+					好友推荐
+					<span class="item-node assertive">有奖</span>
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-ios-rose-outline assertive"></span>
+					设备绑定
+					<span class="item-node energized">智能设备管家</span>
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-ios-pulse-strong assertive"></span>
+					我的积分
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-ios-chatboxes-outline assertive"></span>
+					我的评论
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-left item-icon-right myColor">
+					<span class="icon ion-gear-b assertive"></span>
+					系统设置
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+			</div>
+			
+			
+			
+			
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

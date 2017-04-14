@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>账户管理</title>
+
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+			body{background:url(img/QQ图片20170327104716.png) no-repeat center center ;background-position: top;}
+			.kuang{text-align: center;opacity:0.8;}
+			a{opacity:0.8;}
+			.msg{width: 121px;margin: 30px auto 10px auto;border-radius: 50%;border: 5px solid #ccc;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear">
+				<i class="icon ion-ios-arrow-back"></i>
+			</button>
+			<h1 class="title">账户管理</h1>
+			<button class="button button-clear">
+				<i class="icon ion-navicon"></i>
+			</button>
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="item kuang" style="height: 300px;">
+
+				<div>
+					<img class="msg" src="img/monkey.jpg" />
+					<p style="font-size: 18px;">无师自通-创业中</p>
+				</div>
+				<div class="button-bar button-light " style="border-radius: 20px;margin-top: 10px;">
+				  <a class="button button-outline button-stable">视频 </a>
+				  <a class="button button-outline button-stable">订阅</a>
+				  <a class="button button-outline button-stable">收藏</a>
+				</div>
+				
+			</div>
+			<ul class="list" style="margin-top: 10px;">
+				<a href="#" class="item  item-icon-left item-icon-right">
+					<i class="icon ion-android-attach"></i>
+					<span>昵称</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				<a href="#" class="item  item-icon-left item-icon-right">
+					<i class="icon ion-android-attach"></i>
+					<span>昵称</span>
+					<span class="badge badge-assertive"style="margin-right: 252px;font-size: 10px;">有奖</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				<a href="#" class="item  item-icon-left item-icon-right">
+					<i class="icon ion-android-attach"></i>
+					<span>昵称</span>
+					<span class="badge badge-energized"style="margin-right: 205px;font-size: 10px;">智能设备管家</span>
+					
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				<a href="#" class="item  item-icon-left item-icon-right">
+					<i class="icon ion-android-attach"></i>
+					<span>昵称</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				<a href="#" class="item  item-icon-left item-icon-right">
+					<i class="icon ion-android-attach"></i>
+					<span>昵称</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+			</ul>
+			<div style="text-align: center;">
+				<button style="width: 200px;" class="button button-dark">
+				  确定
+				</button>
+			</div>
+			
+
+		</div>
+		
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myCon",function() {
+					
+			});
+		</script>
+	</body>
+</html>

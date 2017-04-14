@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/ionic.css"/>
+		<style>
+			.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive{
+				margin-right: -12px;
+			}
+			body{
+				background: #eee;
+			}
+			.myt{
+				color: #ccc;
+				font-family: "微软雅黑";
+			}
+			.myx{
+				margin-left: -90px;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-ios-arrow-back"></button>
+			<h3 class="title myt">新建地址</h3>
+			<button class="button button-clear icon ion-navicon"></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+		<ul class="list">
+			
+			<a class="item myt">
+				联系人：
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item myt">
+				联系方式：
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item  myt">
+				所在地区：
+			</a>
+		</ul>
+		
+		<ul class="list">
+			
+			<a class="item item-thumbnail-left myt">
+				<span class="myx">详细地址</span>：
+			</a>
+		</ul>
+    		
+		<div class="padding">
+		<button class="button button-block button-balanced">确定</button>
+		</div>	
+			
+		</div>
+		
+	
+	</body>
+	<script>
+		var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myCon",function() {
+					
+			});
+	</script>
+</html>

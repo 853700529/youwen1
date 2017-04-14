@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				background-image: url(img/1.jpg);
+				/*background-size: cover;
+				background-repeat: no-repeat;*/
+				font-family: "微软雅黑";	
+				text-align: center;
+			}
+			h2{
+				text-align: center;
+			}
+			ul{
+				list-style: none;
+				margin-left: 40px;
+			}
+			li{
+				display: inline-block;
+				border: 1px solid red;
+				width:30%;
+				height: 50px;
+				background-color: #fff;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+			}
+			li:first-child{
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			li:last-child{
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.item-body{
+				text-indent: 30px;
+			}
+			.myImg{
+				width: 80px;
+				height: 80px;
+				margin-top: 50px;
+				border: 5px solid #eee;
+				border-radius: 50%;
+			}
+			
+			.myColor{
+				opacity: 0.8;
+			}
+			.myColor1{
+				width: 80px;
+				height: 80px;
+				border: 5px solid #eee;
+				border-radius: 50%;
+				margin: 80px 150px 0 150px;
+				opacity: 1;
+			}
+			.myFont{
+				font-size: 100px;
+			}
+			
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header myColor">
+			<button class="button icon ion-home button-clear button-dark"></button>
+			<h1 class="title">意见反馈</h1>
+			<button class="button icon ion-person button-clear button-dark"></button>
+		</div>
+		
+		<div class="content has-header myColor scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				<img src="img/8.jpg" class="myColor1" />
+				<h2 class="myColor2">乐趣做</h2>
+			</div>
+			<div class="list">
+				<textarea rows="15"cols="50" class="myColor" placeholder="说点什么吧..."></textarea>
+			</div>
+			<p>VSHKSB1.0.0</p>
+			<p>上海乐趣做信息股份有限公司</p>
+			
+			
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

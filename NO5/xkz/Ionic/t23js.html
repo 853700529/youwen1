@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/ionic.css" />
+		<style>
+			.tabs .tab-item .badge.badge-assertive,
+			.badge.badge-assertive {
+				margin-right: -12px;
+			}
+			
+			body {
+				background: #EEEEEE;
+			}
+			
+			.myc {
+				background: skyblue;
+			}
+			
+			.button-clear.button-clear {
+				color: #fff;
+				font-size: 14px;
+			}
+			
+			.item-input-wrapper {
+				background: #fff;
+			}
+			
+			.mytx {
+				text-align: center;
+				line-height: 43px;
+				font-size: 18px;
+				color: #ccc;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCon">
+
+		<div class="content scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+
+				<div class="item-input myc">
+					<label class="item-input-wrapper">
+						<i class="icon ion-search"></i>
+						<input type="text"  value="iphone7s" />
+						<i class="icon ion-android-close"></i>
+					</label>
+					<button class="button button-small button-clear dark">取消</button>
+				</div>
+
+				<div class="item mytx">
+					<span style="font-size: 20px;line-height: 81px;"><i class="icon ion-android-alert" style="color:#ddd;font-size:40px;line-height: 90px;"></i>
+					抱歉未找到商品的说明书</span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item">
+					<div class="row">
+						<div class="col col-50 "><img src="img/bai.jpg" class="full-image" /></div>
+						<div class="col col-50"><img src="img/bai.jpg" class="full-image" /></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="list">
+				<div class="item">
+					<div style="text-align:center;color:#ccc;">你也可以为商品：</div>
+					<div style="text-align:center;color:#ccc;">提交视频链接
+						<i class="icon ion-android-attach assertive" ng-click="myclick1()"></i> (注：点击标签直接操作)
+					</div>
+
+				</div>
+			</div>
+
+	</body>
+	<script>
+		var myApp = angular.module("myApp", ["ionic"]);
+
+		myApp.controller("myCon", function($scope, $ionicPopup, $timeout) {
+			$scope.myclick1 = function() {
+				var myPopup = $ionicPopup.show({
+					template: '<input type="password" ng-model="data.wifi">',
+					title: '视频连接-iphone6s',
+					
+					scope: $scope,
+					buttons: [{
+						text: '取消'
+					}, {
+						text: '<b>保存</b>',
+						type: 'button-positive',
+						onTap: function(e) {
+							if(!$scope.data.wifi) {
+								//不允许用户关闭，除非他键入wifi密码
+								e.preventDefault();
+							} else {
+								return $scope.data.wifi;
+							}
+						}
+					}, ]
+				});
+			};
+
+		});
+	</script>
+
+</html>

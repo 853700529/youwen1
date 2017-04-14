@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				font-family: "微软雅黑";
+				background-color: #eee;
+			}
+		.myRight{
+			font-size: 20px;
+		}
+		.myRight1{
+			margin-left: 80px;
+			font-size: 30px;
+		}
+		.myImg{
+			width: 15%;
+			height: 60px;
+			float: left;
+			border-radius: 5px;
+		}
+		.mySpan{
+			float: right;
+		}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-clear">
+			<a class="button button-clear icon ion-android-arrow-back button-dark"></a>
+		</div>
+		<!--内容-->
+		<div class="content scroll scroll-content" style="overflow-y: scroll;">
+			<img src="img/3.jpg" alt="" />
+			<div class="list">
+				<div class="item">
+					<div class="row">
+						<div class="col col-20 icon ion-email myRight">2345</div>
+						<div class="col col-20 icon ion-star myRight">100</div>
+						<div class="col col-20 icon ion-ios-rose assertive myRight ">1230</div>
+						<span class="item-note icon ion-star energized myRight myRight1"></span>
+						<i class="icon ion-ios-redo myRight" style="font-size: 30px;"></i>
+					</div>
+				</div>
+				<div class="item">
+					<h2>iPhone6的视屏是交电话，使用说明书</br>
+					斤斤计较斤斤计较斤斤计较斤斤计较就急急急</br>急急急急急急金鸡胶囊</h2>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-knife assertive"></i>
+					<p>标签集</p>
+					<i class="icon ion-search assertive"></i>
+				</div>
+				<div class="item item-icon-left item-icon-right">
+					<div class="button-bar">
+						<span class="button button-outline button-calm">视频片段1</span>
+						<span class="button button-outline button-calm">视频片段2</span>
+					</div>
+					<div class="button-bar">
+						<span class="button button-outline button-calm">视频片段3</span>
+						<span class="button button-outline button-calm">视频片段4</span>
+					</div>
+					<div class="button-bar">
+						<span class="button button-outline button-calm">视频片段5</span>
+						<span class="button button-outline button-calm">视频片段6</span>
+					</div>
+					<div class="button-bar"ng-hide="myShow">
+						<span class="button button-outline button-calm">视频片段7</span>
+						<span class="button button-outline button-calm">视频片段8</span>
+					</div>
+					<div ng-show="myShow" ng-click="myShow()">
+						点击查看更多
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-avatar item-icon-right">
+					<img src="img/4.jpg" />
+					<p>无师自通---创业中</p>
+					<i class="icon ion-person-add"></i>
+				</div>
+				<div class="item">
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+					<img src="img/4.jpg" class="myImg" ng-hide="myShow1"/>
+				</div>
+				<div class="item" ng-click="myShow1()" ng-show="myShow1">点击查看更多</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-knife assertive"></i>
+					<p>说明书文档</p>
+					<i class="icon ion-search assertive"></i>
+				</div>
+				<div class="padding">
+					<div class="button button-calm">点击查看</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left">
+					<i class="icon ion-knife assertive"></i>
+					<p>关联商品</p>
+				</div>
+				<div class="item item-thumbnail-left">
+					<img src="img/4.jpg" alt="" />
+					<h2>商品名称</h2>
+					<span class="item-body">刷卡不受打击的内裤局发布能不能的少女就处女节车厢你</span>
+				</div>
+				<div class="item item-thumbnail-left">
+					<img src="img/4.jpg" alt="" />
+					<h2>商品名称</h2>
+					<span class="item-body">刷卡不受打击的内裤局发布能不能的少女就处女节车厢你</span>
+				</div>
+				<div class="item item-thumbnail-left">
+					<img src="img/4.jpg" alt="" />
+					<h2>商品名称</h2>
+					<span class="item-body">刷卡不受打击的内裤局发布能不能的少女就处女节车厢你</span>
+				</div>
+			</div>
+			
+			<div class="list">
+				<div class="item item-icon-left">
+					<i class="icon ion-knife assertive"></i>
+					<p>关联视频</p>
+				</div>
+				<div class="item">
+					<div class="row">
+						<img src="img/banner1.png" class="col col-50" style="height: 100px;"  />
+						<img src="img/banner1.png" class="col col-50" style="height: 100px;"  />
+					</div>
+					<div class="row">
+						<span class="col col-50">标题标题标题</span>
+						<span class="col col-50">标题标题标题</span>
+					</div>
+				</div>
+				<div class="item">
+					<div class="row">
+						<div class="col col-20 icon ion-email myRight">2345</div>
+						<div class="col col-20 icon ion-star myRight">100</div>
+						<div class="col col-20 icon ion-ios-rose assertive myRight ">1230</div>
+						<span class="item-note icon ion-star energized myRight myRight1"></span>
+						<i class="icon ion-ios-redo myRight" style="font-size: 30px;"></i>
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item">
+					<p>评论</p>
+				</div>
+				<div class="item item-avatar">
+					<img src="../0411/img/banner1.png"/>
+					<p>无师自通---创业中</p>
+					<div class="item-note">1小时前</div>
+					<div class="">
+						<span>这个说明好！</span>
+						<span class="icon ion-social-vimeo-outline mySpan">100</span>
+					</div>
+				</div>
+				<div class="item item-avatar">
+					<img src="../0411/img/banner1.png"/>
+					<p>无师自通---创业中</p>
+					<div class="item-note">1小时前</div>
+					<div class="">
+						<span>这个说明好！</span>
+						<span class="icon ion-social-vimeo-outline mySpan">100</span>
+					</div>
+				</div>
+				<div class="item item-avatar">
+					<img src="../0411/img/banner1.png"/>
+					<p>无师自通---创业中</p>
+					<div class="item-note">1小时前</div>
+					<div class="">
+						<span>这个说明好！</span>
+						<span class="icon ion-social-vimeo-outline mySpan">100</span>
+					</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item padding">
+					<input type="text" placeholder="写评论" class="icon ion-android-happy"/>
+				</div>
+				<a href="#" class="button button-calm button-clear" ng-click="fenShow()">分享</a>
+			</div>
+			
+			
+			
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myContro",function($scope) {
+					$scope.myShow=true;
+					$scope.myShow=function(){
+						$scope.myShow=!$scope.myShow;
+					}
+					$scope.myShow1=true;
+					$scope.myShow1=function(){
+						$scope.myShow1=!$scope.myShow1;
+					}
+			});
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js"></script>
+		<style type="text/css">
+		body{
+			background: url(img/tab3-bg.png) repeat center center;
+		}
+		.reg{
+			width: 155px;
+			height: 150px;
+			margin: 40px auto;
+			
+		}
+		.full-image{
+			border-radius:15% ;
+			
+		}
+		.edg{
+			margin-top: 50px;
+			opacity: 0.5;
+			
+		}
+		.padding{
+			width: 90%;
+			margin: 30px auto;
+		}
+		.btn{
+			border-radius: 10px;
+		}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-clear">
+			<button class="button button-clear">
+				返回
+			</button>
+			<h1 class="title">详情</h1>
+		    <button class="button button-clear"><i class="icon ion-ios-more"></i></button>	
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="reg">
+				<img class="full-image" src="img/monkey.jpg"/>
+				<span>&nbsp;&nbsp;无形之刃，最为致命</span>
+			</div>
+			<div class="edg">
+				<span>&nbsp;&nbsp;&nbsp;&nbsp;北京时间4月9日晚20点30分，2016-17赛季英超第32轮在光明球场展开角逐，曼联客场挑战桑德兰。上半场伊布打破僵局，下半场姆希塔良扩大比分，拉什福德替补破球荒。最终全场比赛结束，曼联客场3-0完胜桑德兰。拉尔森染红，伊布传射，红魔联赛连续21轮不败。积分榜方面，曼联积57分升至第5。</span>
+			</div>
+			<div class="padding">
+				<button class="button button-royal button-block btn">下载</button>
+				<button class="button button-balanced button-block btn">未下载</button>
+			</div>
+			</div>
+			
+	</body>
+	<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+</html>

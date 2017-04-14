@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+		body{
+			background: #D9D9D9;
+		}
+			.button-clear.button-clear{
+				color: #000000;
+				font-size: 26px;
+			}
+			.item-input-wrapper{
+				background: #fff;
+			}
+			.item.item-positive{
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-positive">
+		<div class="item item-input-inset item-positive">
+			<label class="item-input-wrapper">
+				<i class="icon ion-search positive"></i>
+				<input type="text" placeholder="标签" />
+			</label>
+			<button class="button button-small button-clear dark">取消</button>
+		</div>
+		</div>
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段1
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+			 	<ul class="list ">
+				<a href="#" class="item item-button-right">
+					标签片段2
+				</a>
+			 	</ul>
+		</div>
+	</body>
+	<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function($scope) {
+					
+			});
+		</script>
+</html>

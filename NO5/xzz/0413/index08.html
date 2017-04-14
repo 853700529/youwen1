@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				background-image: url(img/1.jpg);
+				/*opacity: 0.7;*/
+			}
+			ul{
+				list-style: none;
+				margin-left: 40px;
+			}
+			li{
+				display: inline-block;
+				border: 1px solid red;
+				width:30%;
+				height: 50px;
+				background-color: #fff;
+				text-align: center;
+				line-height: 50px;
+				float: left;
+			}
+			li:first-child{
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+			}
+			li:last-child{
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+			}
+			.item-body{
+				text-indent: 30px;
+			}
+			/*.cont{
+				/*width: 100%;*/
+				/*height: 200px;*/
+			}*/
+			.myImg{
+				width: 80px;
+				height: 80px;
+				margin-top: 50px;
+				border: 5px solid #eee;
+				border-radius: 50%;
+			}
+			
+			.myColor{
+				opacity: 0.6;
+			}
+			.myFont{
+				font-size: 100px;
+				
+			}
+			
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header myColor">
+			<button class="button icon ion-home"></button>
+			<h1 class="title">账户管理</h1>
+			<button class="button icon ion-android-person"></button>
+		</div>
+		
+		<div class="content has-header myColor">
+			<div class="list">
+				<img src="img/banner1.png" class="full-image"/>
+			</div>
+			
+			<div class="list">
+				<a class="item item-icon-right myColor">
+				          是否公开收藏
+				    <span class="item-note">无师自通-创业中</span>	
+					<i class="icon ion-ios-arrow-forward assertive"></i> 
+				 </a>
+				<a class="item item-icon-right myColor">
+					性别
+					<span class="item-note">男</span>	
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-right myColor">
+					个性签名
+					<span class="item-note">个性签名</span>	
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-right myColor">
+					地址管理
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				<a class="item item-icon-right myColor">
+					修改密码
+					<span class="icon ion-ios-arrow-forward assertive"></span>
+				</a>
+				
+			</div>
+			
+			<div class="padding">
+				<button class="button button-block button-assertive">
+				 	 确定
+				</button>
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				background-image: url(img/timg.jpg);
+				background-repeat: no-repeat;
+				font-family: "微软雅黑";
+				color: #FFFFFF;
+			}
+			.myColor{
+				opacity: 0.5;
+			}
+			.Opacity{
+				opacity: 0.5;
+				color: #ffffff;
+			}
+			.item-input-inset .item-input-wrapper input {
+				height: 50px;
+				color: #FFFFFF;
+				font-size: 20px;
+				line-height: 50px;
+			}
+			.button-small {
+				height: 50px;
+				font-size: 16px;
+				border-radius: 10px;
+			}
+			.button.button-calm {
+				border-radius: 10px;
+				
+			}
+			.item-input-wrapper{
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-clear">
+			<a class="button button-clear icon ion-ios-arrow-back"></a>
+			<h3 class="title">注册</h3>
+			<a class="button button-clear ">登陆</a>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			
+			 <div class="item-input-inset">
+			    <label class="item-input-wrapper Opacity">
+			      <input type="text" placeholder="请输入手机号" >
+			    </label>
+			    <button class="button button-small button-calm">
+			     	 获取验证码
+			    </button>
+			 </div>
+			<div class="item-input-inset">
+			    <label class="item-input-wrapper Opacity">
+			      <input type="text" placeholder="请输入收到的验证码" >
+			    </label>
+			 </div>
+			 <div class="item-input-inset">
+			    <label class="item-input-wrapper Opacity">
+			      <input type="text" placeholder="密码至少6位，大小写字母、数字、符号混合" >
+			    </label>
+			 </div>
+			 <div class="item-input-inset">
+			    <label class="item-input-wrapper Opacity">
+			      <input type="text" placeholder="再次确定密码" >
+			    </label>
+			 </div>
+			 <div class="padding">
+			 	<button class="button button-block button-calm">注册</button>
+			 </div>
+			  <input type="checkbox"/>我已阅读并接受注册协议
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

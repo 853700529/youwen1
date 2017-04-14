@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/ionic.css" />
+		<style>
+			body{
+				background: #EEEEEE;
+			}
+			.myd {
+				margin-top: 30px;
+				font-family: "微软雅黑";
+			}
+			
+			.mys {
+				font-size: 30px;
+				font-weight: bold;
+				font-family: "微软雅黑";
+			}
+			
+			.item p {
+				color: #fff;
+				font-family: "微软雅黑";
+			}
+			.button:after {
+				border-left:orangered;
+  			}
+  			.item-note{
+  				color: red;
+  				font-size: 23px;
+  				line-height: 34px;
+  			
+  			}
+  			.myt{
+  				color: #9E9E9E !important;
+  			}
+  			.myj{
+  				font-size: 14px !important;
+  				color: #fff !important;
+  			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-ios-arrow-back"></button>
+			<h3 class="title">专题列表</h3>
+			<button class="button button-clear icon ion-navicon"></button>
+		</div>
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="item item-assertive">
+				<div class="item-note myj">积分规则</div>
+				<div class="myd">
+					<span class="mys">872</span> 积分
+					<p class="myp">小积分，大用处！快来屯一些!</p>
+				</div>
+			</div>
+			<div class="button-bar ">
+					<button class="button button-energized">
+						<i class="icon ion-android-list"></i>
+						<span>订单</span>
+					</button>
+					<i></i>
+					<button class="button button-energized myb">
+						<i class="icon ion-android-cart"></i>
+						<span>兑换</span>
+					</button>
+			</div>
+			<div class="item item-divider">
+				收支明细
+			</div>
+			<div class="list">
+			<div class="item">
+				<span class="item-note">+3</span>
+				<span>收支明细</span><br  />
+				<span class="myt">2017-04-10 20:00</span>
+			</div>	
+			</div>
+			<div class="list">
+				<div class="item">
+				<span class="item-note">+332</span>
+				<span>收支明细</span><br  />
+				<span class="myt">2017-04-10 20:00</span>
+				
+			</div>
+			
+			</div>
+			<div class="list">
+			<div class="item">
+				<span class="item-note">+888</span>
+				<span>收支明细</span><br  />
+				<span class="myt">2017-04-10 20:00</span>
+			</div>	
+			</div>
+		</div>
+
+	</body>
+	<script>
+		var myApp = angular.module("myApp", ["ionic"]);
+
+		myApp.controller("myCon", function() {
+
+		});
+	</script>
+
+</html>

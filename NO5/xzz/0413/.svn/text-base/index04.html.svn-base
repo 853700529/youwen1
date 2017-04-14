@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style type="text/css">
+			.myspan{
+				font-size: 40px;
+			}
+			.myColor{
+				color:#fff !important;
+			}
+			/*.tab-item{
+				padding-top: 5px;
+			}
+			.ion-calculator{
+				width: 40px;
+				height: 40px;
+				margin-top: -5px;
+				background-color: #fff;
+				border-radius: 50%;
+			}*/
+		</style>
+	</head>
+	<body ng-controller="myContro" style="background-color: #eee;">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-home"></button>
+			<h1 class="title">专题列表</h1>
+			<button class="button button-clear icon ion-android-contact"></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y:scroll ;">
+			<!--<div class="list">-->
+				 <a class="item item-icon-right item-assertive" href="#">
+				     <sapn class="item-note myColor">积分规则</sapn>
+				      <p class="item-body myColor"><span class="myspan myColor">872</span>积分</p>
+					  <span class="item-body myColor">小积分，大用处，快来囤一些！</span>
+					  
+				 </a>
+			     <div class="item tabs tabs-icon-left item-calm">
+							<li class="tab-item">
+								<i class="icon ion-calculator assertive"></i>
+								订单
+							</li>
+							<li class="tab-item">
+								<i class="icon ion-filing"></i>
+								兑换
+							</li>
+						</div>
+			<!--</div>-->
+			<div class="list">
+				<li class="item item-divider">收支明细</li>
+				<li class="item item-icon-right">
+					<span>收支明细</span>
+			    	<p>2016-04-10-21:07</p>
+			    	<span class="badge assertive icon">+3</span>
+				</li>
+			</div>
+			<div class="list">
+				<li class="item item-icon-right">
+					<span>收支明细</span>
+			    	<p>2016-04-10-21:07</p>
+			    	<span class="badge assertive icon">+332</span>
+				</li>
+			</div>
+			<div class="list">
+				<li class="item item-icon-right">
+					<span>收支明细</span>
+			    	<p>2016-04-10-21:07</p>
+			    	<span class="badge assertive icon">+311</span>
+				</li>
+			</div>
+			
+			
+		</div>
+
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

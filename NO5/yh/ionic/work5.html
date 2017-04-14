@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>账户管理</title>
+
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+			body{background:url(img/292846.jpg) repeat-y center center ;background-position: top;background-size: 100%;}
+			.kuang{background: url(i片20170322151037.jpg) no-repeat;background-size: 100%;text-align: center;}
+			ul{background: #3E6BA7;opacity:0.6;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear">
+				<i class="icon ion-ios-arrow-back"></i>
+			</button>
+			<h1 class="title">账户管理</h1>
+			<button class="button button-clear">
+				<i class="icon ion-navicon"></i>
+			</button>
+			
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="item kuang" style="height: 300px;">
+				<span style="color: white;line-height: 300px;">点击更换头像</span>
+			</div>
+			<ul class="list">
+				<li class="item item-toggle">
+					HTML5
+					<label class="toggle toggle-assertive">
+						<input type="checkbox">
+						<div class="track">
+						<div class="handle"></div>
+						</div>
+					</label>
+				</li>
+				<a href="#" class="item item-icon-right">
+					<span>意见反馈</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				<a href="#" class="item item-icon-right">
+					<span>关于</span>
+					<span style="float: right;">无师自通-创业中</span>
+					<i class="icon ion-ios-arrow-forward my-color2"></i>
+				</a>
+				
+			</ul>
+			<div style="text-align: center;margin-top: 100px;">
+				<button style="width: 200px;" class="button button-dark">
+				 退出当前账号
+				</button>
+			</div>
+			<div style="font-size: 10px;text-align: center;color: #333333;">
+				<span>Version&nbsp;1.0.0</span>
+				<p>上海乐趣做信息技术有限公司</p>
+			</div>
+			
+
+		</div>
+		
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myCon",function() {
+					
+			});
+		</script>
+	</body>
+</html>

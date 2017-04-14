@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				font-family: "微软雅黑";
+				background-color: #eee;
+			}
+			
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-calm">
+			<a class="button button-clear">取消</a>
+			<p class="title">筛选</p>
+			<a class="button button-clear">确定</a>
+			
+		</div>
+		<!--内容-->
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				<a href="#" class="item">
+					<p>全部分类</p>
+					<span class="badge calm">手机</span>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item">
+					<p>品牌</p>
+					<span class="badge calm">iPhone</span>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item">
+					<p>其他</p>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item">
+					<p>其他1</p>
+				</a>
+			</div>
+			<div class="padding">
+				<button class="button button-block">清除选项</button>
+			</div>
+			
+
+		
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>积分兑换</title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.min.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+		<style>
+			i{
+				font-size: 16px;
+			}
+			span{
+				color: #000;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myCon" style="background: #F5F5F5;">
+		<div class="bar bar-header bar-positive">
+		 	<div class="button button-clear icon ion-ios-arrow-back"></div>
+		 	<div class="title">积分兑换</div>
+		 	<div class="button button-clear icon ion-ios-person-outline"></div>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="row">
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							<i>3i5.00<span>积分</span></i>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+				
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							3i5.00
+							<span>积分</span>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							<i>3i5.00<span>积分</span></i>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+				
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							3i5.00
+							<span>积分</span>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							<i>3i5.00<span>积分</span></i>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+				
+				<div class="col col-48">
+					<div class="col" style="background: #fff;">
+						<img src="img/wares1.png" style="width: 100%;" />
+						<p>商品商品商品商品商品商品商品商品</p>
+						<p class="assertive">
+							3i5.00
+							<span>积分</span>
+							<button class="item-note button button-small button-assertive">兑换</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+			var myApp = angular.module("myApp", ["ionic"]);
+			myApp.controller("myCon", ["$scope", function($scope) {
+
+			}])
+		</script>
+	</body>
+</html>

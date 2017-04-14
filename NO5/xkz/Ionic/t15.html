@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/ionic.css"/>
+		<style>
+			.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive{
+				margin-right: -12px;
+			}
+			body,html{
+				background-image:url(img/z1.png);
+				background-repeat: no-repeat;
+			
+				
+				
+			}
+			.myt{
+				color: #69717D !important;
+				font-family: "微软雅黑";
+			}
+			.myx{
+				margin-left: -90px;
+			}
+			
+			.myimg{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin: 50px 110px;
+				text-align: center;
+			}
+			.myk{
+				opacity: 0.5;
+				margin-top: 15px!important;
+			}
+			.myl{
+				opacity: 0.5;
+			}
+			.myz{
+				margin-bottom: 100px;
+				opacity: 1!important;
+				
+			}
+			.mys{
+				margin-top: -15px;
+				opacity: 0.5;
+				
+			}
+			.card .item:last-child, .list-inset .item:last-child, .padding > .list .item:last-child{
+				border-radius:10px ;
+			}
+			.item{
+				padding: 10px;
+			}
+			.mypa{
+				margin-top: 5px;
+			}
+			.mya{
+				text-decoration: none;
+			}
+			.myimg1{
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-left: 15px;
+				margin-top: 20px;
+				text-align: center;
+				float: left;
+			}
+			.myw{
+				background: #FFFFFF;
+				opacity: 0.5;
+			}
+			.myin{
+				width: 80px;
+			}
+			.button-small{
+				padding: 0 8px;
+			}
+			
+			.myz{
+				margin-top: 5px;
+				margin-left: 10px;
+			}	
+			.mypad{
+				margin-top: -100px;
+			}	
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		
+		<div class="bar bar-header bar-clear">
+			<button class="button button-clear icon ion-ios-arrow-back "></button>
+			<h3 class="title">注册</h3>
+			<button class="button button-clear icon ion-more "></button>
+		</div>
+		
+		<div class="content has-header has-subheader scroll scroll-content" style="overflow-y: scroll;">
+		<div class="item-input myc">
+					<label class="item-input-wrapper myw" style="margin-left: -5px;">
+						
+						<input type="text"  placeholder="请输入手机号" class="myin"/>
+						
+					</label>
+					<button type="button" class="button button-calm button-small" >获取验证码</button>
+		</div>
+		<div class="item-input myc padding" >
+					<label class="item-input-wrapper myw ">
+						 
+						<input type="text"  placeholder="请输入收到的验证码" class="myin" />
+						
+					</label>
+					
+		
+		</div>
+		<div class="item-input myc padding">
+					<label class="item-input-wrapper myw">
+						
+						<input type="text"  placeholder="密码至少六位" class="myin"/>
+						
+					</label>
+					
+		
+		</div>
+		<div class="item-input myc padding">
+					<label class="item-input-wrapper myw">
+						
+						<input type="text"  placeholder="再次确认密码" class="myin"/>
+						
+					</label>
+					
+		
+		</div>
+		<div class="myz">
+			<input type="checkbox" class="" />
+			我已阅读并接受注册协议
+		</div>
+		<div class="padding mypad">
+					
+			<button class="button button-block button-balanced">注册</button>		
+		
+		</div>
+		
+		
+	</body>
+	<script>
+		var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myCon",function() {
+					
+			});
+	</script>
+</html>

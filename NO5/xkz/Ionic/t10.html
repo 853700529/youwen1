@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/ionic.css" />
+		<style>
+			.tabs .tab-item .badge.badge-assertive,
+			.badge.badge-assertive {
+				margin-right: -12px;
+			}
+			body{
+				background: #EEEEEE;
+			}
+			.myc{
+				background: skyblue;
+			}
+			.button-clear.button-clear{
+				color: #fff;
+				font-size: 14px;
+			}
+			.item-input-wrapper{
+				background: #fff;
+			} 
+			.mytx{
+				text-align: center;
+				background: #EEEEEE;
+				line-height: 43px;
+				font-size: 18px;
+				color: #ccc;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCon">
+		
+
+		<div class="content scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				
+				<div class="item-input myc">
+					<label class="item-input-wrapper">
+						<i class="icon ion-search"></i>
+						<input type="text"  value="标签" />
+						<i class="icon ion-android-close"></i>
+					</label>
+					<button class="button button-small button-clear dark">取消</button>
+				</div>
+				
+				
+			</div>
+			<div class="list">
+				<div class="mytx">
+					<span><i class="icon ion-android-alert"></i>
+					抱歉未找到此标签</span>
+				</div>
+			</div>
+			
+	</body>
+	<script>
+		var myApp = angular.module("myApp", ["ionic"]);
+
+		myApp.controller("myCon", function($scope) {
+				
+		});
+	</script>
+
+</html>

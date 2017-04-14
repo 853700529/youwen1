@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.min.css"/>
+		<script src="js/ionic.bundle.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body ng-controller="myCon" style="background: #F5F5F5;">
+		<div class="bar bar-header bar-positive">
+		 	<div class="button button-clear icon ion-ios-home-outline"></div>
+		 	<div class="title">专题列表</div>
+		 	<div class="button button-clear icon ion-ios-person-outline"></div>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				<div class="item" style="background: #de5353;padding: 10px 20px;">
+					<p class="item-note" style="color: #fff;">积分规则</p>
+					<p style="color: #fff;margin-top: 40px;"><span style="font-size: 28px;">872</span>积分</p>
+					<p style="color: #fff;margin-bottom: 30px;">小积分，大用处</p>
+				</div>
+				<div class="button-bar button-assertive"> 
+					<button class="button button-assertive">
+						<i class="icon ion-ios-bookmarks"></i>订单
+					</button>
+					<button class="button button-assertive">
+						<i class="icon ion-android-cart"></i>订单
+					</button>
+				</div>
+				<p class="item item-divider">收支明细</p>
+				<a href="#" class="item">
+					明细
+					<span class="item-note assertive">+33</span>
+				</a>
+				<p class="item item-divider" style="min-height: 1px;"></p>
+				 <a href="#" class="item">
+					明细
+					<span class="item-note assertive">+33</span>
+				</a>
+				<p class="item item-divider" style="min-height: 1px;"></p>
+				<a href="#" class="item">
+					明细
+					<span class="item-note assertive">+33</span>
+				</a>
+			</div>
+		</div>
+		
+		<script>
+			var myApp=angular.module("myApp",["ionic"]);
+			myApp.controller("myCon",["$scope",function($scope){
+				
+			}])
+		</script>
+	</body>
+</html>

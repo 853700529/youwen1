@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+
+		<link rel="stylesheet" href="css/ionic.css" />
+		<style>
+			.tabs .tab-item .badge.badge-assertive,
+			.badge.badge-assertive {
+				margin-right: -12px;
+			}
+			
+			body,
+			html {
+				background-image: url(img/h1.jpg);
+				background-repeat: no-repeat;
+			}
+			
+			.myt {
+				color: #69717D !important;
+				font-family: "微软雅黑";
+			}
+			
+			.myx {
+				margin-left: -90px;
+			}
+			
+			.myimg {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin: 30px 110px;
+				text-align: center;
+			}
+			
+			.myk {
+				opacity: 0.5;
+				margin-top: 15px!important;
+			}
+			
+			.myl {
+				opacity: 0.8;
+			}
+			
+			.myz {
+				margin-bottom: 100px;
+				opacity: 1!important;
+			}
+			.button{
+				border-right: 1px solid #ccc!important;
+			}
+			.popup-container .popup{
+				background-color:rgba(0,0,0,0.6)
+			
+			}
+			div.popup-body span{
+				color: #fff!important;
+			}
+			h3{
+				color: #fff;
+			}
+		
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+
+	<body ng-controller="myCon">
+
+		<div class="bar bar-header myo bar-clear">
+			<button class="button button-clear icon ion-ios-arrow-back "></button>
+			<h3 class="title ">系统设置</h3>
+			<button class="button button-clear icon ion-navicon "></button>
+		</div>
+
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<img src="img/c.jpg" class="myimg" />
+			<div style="text-align: center;margin-top: -15px;color: #fff;font-weight: bold;">汪星人</div>
+			<div class="button-bar padding icon-left myl">
+				<a class="button" ng-click="myclick1()">
+					<i class=" ion-videocamera"></i>
+					视频					
+				</a>
+				<a class="button" ng-click="myclick2()"><i class=" ion-home"></i>订阅</a>
+				<a class="button" ng-click="myclick3()"><i class=" ion-star"></i>收藏</a>
+			</div>
+
+		<ul class="list">
+
+			<a class="item item-icon-left item-icon-right myl myk">
+				您有一封邮件
+				<i class="icon ion-email balanced"></i>
+				<i class="icon ion-ios-arrow-forward dark"></i>
+			</a>
+			<a class="item item-icon-left item-icon-right myl">
+				意见反馈
+				<i class="icon ion-ios-list energized"></i>
+				<i class="icon ion-ios-arrow-forward "></i>
+			</a>
+			<a class="item item-icon-left item-icon-right myl">
+				关于
+				<i class="icon ion-lightbulb calm"></i>
+				<i class="icon ion-ios-arrow-forward "></i>
+			</a>
+			<a class="item item-icon-left item-note-right myl">
+				朋友申请
+				<i class="icon ion-person-stalker assertive"></i>
+				<span class="item-note item-stable">您有一条消息</span>
+
+			</a>
+			<a class="item item-icon-left item-icon-right myl">
+				您有一段语音
+				<i class="icon ion-mic-a dark"></i>
+				<i class="icon ion-ios-telephone-outline balanced"></i>
+			</a>
+			<a class="item item-icon-left item-icon-right myl">
+				意见反馈
+				<i class="icon ion-ios-list energized"></i>
+				<i class="icon ion-ios-arrow-forward "></i>
+			</a>
+			<a class="item item-icon-left item-icon-right myl">
+				关于
+				<i class="icon ion-lightbulb calm"></i>
+				<i class="icon ion-ios-arrow-forward "></i>
+			</a>
+
+		</ul>
+		</div>
+
+	</body>
+	<script>
+		var myApp = angular.module("myApp", ["ionic"]);
+
+		myApp.controller("myCon", function($scope,$ionicPopup, $timeout) {
+		$scope.myclick1 = function() {
+     	var confirmPopup = $ionicPopup.confirm({
+       title: '请选择：',
+       template: '你确定要选择视频吗?',
+       okText: '是',
+       cancelText:'否'
+     });
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('You are sure');
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
+   
+   $scope.myclick2 = function() {
+     	var confirmPopup = $ionicPopup.confirm({
+        title: '请选择：',
+       template: '你确定要订阅吗?',
+       okText: '是',
+       cancelText:'否'
+     });
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('You are sure');
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
+   
+   $scope.myclick3 = function() {
+     	var confirmPopup = $ionicPopup.confirm({
+       title: '请选择：',
+       template: '你确定要收藏吗?',
+       okText: '是',
+       cancelText:'否'
+     });
+     confirmPopup.then(function(res) {
+       if(res) {
+         console.log('You are sure');
+       } else {
+         console.log('You are not sure');
+       }
+     });
+   };
+			
+		});
+	</script>
+
+</html>

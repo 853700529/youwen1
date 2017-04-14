@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css" />
+		<script src="js/ionic.bundle.js"></script>
+	</head>
+
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-positive">
+			<button class="button button-clear"><i class="icon ion-home"></i></button>
+			<h1 class="title">我的评价</h1>
+			<button class="button button-clear"><i class="icon ion-person"></i></button>
+		</div>
+
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="list">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-ios-trash" ng-click="showConfirm()"></button>
+				</a>
+				<div class="item item-text-wrap">
+					This is a basic Card which contains an item that hdfs wrapping text.
+				</div>
+				<a class="item item-thumbnail-left" href="#">
+					<img src="img/guo.jpg">
+					<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-ios-trash" ng-click="showConfirm()"></button>
+				</a>
+				<div class="item item-text-wrap">
+					This is a basic Card which contains an item that hdfs wrapping text.
+				</div>
+				<a class="item item-thumbnail-left" href="#">
+					<img src="img/guo.jpg">
+					<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-ios-trash" ng-click="showConfirm()"></button>
+				</a>
+				<div class="item item-text-wrap">
+					This is a basic Card which contains an item that hdfs wrapping text.
+				</div>
+				<a class="item item-thumbnail-left" href="#">
+					<img src="img/guo.jpg">
+					<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+				</a>
+			</div>
+			<div class="list">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-ios-trash" ng-click="showConfirm()"></button>
+				</a>
+				<div class="item item-text-wrap">
+					This is a basic Card which contains an item that hdfs wrapping text.
+				</div>
+				<a class="item item-thumbnail-left" href="#">
+					<img src="img/guo.jpg">
+					<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+				</a>
+			</div>
+
+		</div>
+
+	</body>
+	<script>
+		var myApp = angular.module('myApp', ['ionic']);
+		myApp.controller("myContro", function($scope, $ionicPopup, $timeout) {
+
+			$scope.showConfirm = function() {
+				var confirmPopup = $ionicPopup.confirm({
+					title: '2017-04-12  23:00',
+					template: '你是否真的想删除?',
+					cancelText: '取消', // String (默认: 'Cancel')。一个取消按钮的文字。
+					okText: '确定', // String (默认: 'OK')。OK按钮的文字。
+				});
+
+			};
+
+		});
+	</script>
+
+</html>

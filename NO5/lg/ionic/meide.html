@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				background-image: url(img/tab3-bg.png);
+				background-repeat: no-repeat;
+			}
+			
+			.reg {
+				width: 95%;
+				height: 170px;
+				margin: 20px auto;
+			}
+			
+			.full {
+				width: 120px;
+				height: 130px;
+				border-radius: 50%;
+				float: left;
+			}
+			
+			.card {
+				opacity: 0.5;
+			}
+			
+			.bar.bar-clear .title {
+				color: #777;
+			}
+			
+			.bar .button.button-clear,
+			.bar button.button-clear {
+				color: #CCCCCC;
+			}
+			
+			.chuang {
+				float: left;
+			}
+			
+			.rng {
+				padding-top: 10px;
+				margin-left: 10px;
+			}
+			
+			span {
+				font-size: 30px;
+			}
+			
+			.popup-container.active .popup {
+				background: #111;
+			}
+			
+			.popup-title {
+				color: #fff;
+			}
+		</style>
+	</head>
+
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-clear">
+			<button class="button button-clear button-calm"><i class="icon ion-ios-arrow-back"></i></button>
+			<h1 class="title">美的360智能电饭煲</h1>
+			<button class="button button-clear">解锁</button>
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="reg">
+				<img class="full" src="img/suo.jpg" />
+				<div class="chuang ">
+					<p class="rng">设备已经使用<span>&nbsp;250&nbsp;</span>天</p>
+					<p class="rng">已接受的消息<span>&nbsp;200&nbsp;</span>天</p>
+					<p class="rng">已经为您服务<span>&nbsp;200&nbsp;</span>天</p>
+				</div>
+			</div>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					保养三个月
+					<button class="button button-stable button-clear ion-ios-cog-outline" ng-click="showConfirm()"></button>
+				</a>
+			</ul>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					保养三个月
+					<button class="button button-stable button-clear ion-ios-cog-outline" ng-click="showConfirm()"></button>
+				</a>
+			</ul>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					保养三个月
+					<button class="button button-stable button-clear ion-ios-cog-outline" ng-click="showConfirm()"></button>
+				</a>
+			</ul>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					保养三个月
+					<button class="button button-stable button-clear ion-ios-cog-outline" ng-click="showConfirm()"></button>
+				</a>
+			</ul>
+		</div>
+	</body>
+	<script>
+		var myApp = angular.module('myApp', ['ionic']);
+		myApp.controller("myContro", function($scope, $ionicPopup, $timeout) {
+
+			$scope.showConfirm = function() {
+
+				var confirmPopup = $ionicPopup.confirm({
+
+					title: '解锁设备将不会收到任何消息提示，确定解锁吗？',
+					cancelText: '取消', // String (默认: 'Cancel')。一个取消按钮的文字。
+					okText: '确定', // String (默认: 'OK')。OK按钮的文字。
+				});
+			};
+		});
+	</script>
+
+</html>

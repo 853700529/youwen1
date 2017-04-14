@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>侧面菜单</title>
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style type="text/css">
+			.item{border-width:0px ;}
+			.lef .item{padding: 25px 0;color: #1daed7;background: #f5f5f5;border-bottom: 1px solid #ccc;}
+			.A_Z .item-body{background: #17a3cb;padding:  0;height: 72px;line-height: 36px;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		  <ion-side-menus>
+		  	<ion-side-menu-header align-title="center" class="bar-royal" >
+				<button class="button button-clear" ng-click="toggleLeftSideMenu()">
+					<i class="icon ion-ios-arrow-back"></i>
+				</button>
+				<h2 class="title">标题</h2>
+				<button class="button button-clear">
+					<i class="icon ion-navicon"></i>
+				</button>
+			</ion-side-menu-header>
+		  	
+		    <ion-side-menu-content>
+				<div class="item">
+					<span>全部品牌</span>
+					<i class="icon ion-android-cart"></i>
+					<span style="float: right;">检索</span>
+				</div>
+		    </ion-side-menu-content>
+		    <ion-side-menu side="left">
+				<div class="item item-icon-right">
+					<span>全部品牌</span>
+					<i class="icon ion-android-cart"></i>
+					<span style="float: right;">检索</span>
+				</div>
+				<div class="row " padding="fasle">
+				  <div style="width:20%;float: left;">
+				  	<ul class="list lef" style="text-align: center;">
+				  		<div class="item" style="background:#ffffff;">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		<div class="item">家电</div>
+				  		
+				  	</ul>
+				  </div>
+				  <div style="width: 70%;float: right;" class="A_Z">
+				  		<div class="item item-body" style="letter-spacing: 12px;">#ABCDEFGHIJKLMNO</div>
+				  		<div class="item item-body" style="letter-spacing: 15px;">PQRSTUVWXYZ</div>
+				  		<div>
+				  			<ul class="list">
+				  				<li class="item" style="padding: 0;">
+				  					<div class="row" style="padding: 0;margin-top: 20px;">
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/BB FlashBack Pro Player.lnk.png" alt="" style="width: 100%;"/ >
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+											<img src="img/SIEMENS.png" alt="" style="width: 100%;" />
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/Haier.png" alt="" style="width: 100%;" />
+										</div>
+									</div>
+				  				</li>
+				  				<li class="item" style="padding: 0;margin-top: 20px;">
+				  					<p>A</p>
+				  					<div class="row" style="padding: 0;">
+				  						
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/BB FlashBack Pro Player.lnk.png" alt="" style="width: 100%;"/ >
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+											<img src="img/SIEMENS.png" alt="" style="width: 100%;" />
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/Haier.png" alt="" style="width: 100%;" />
+										</div>
+									</div>
+				  				</li>
+				  				<li class="item" style="padding: 0;margin-top: 20px;">
+				  					<div class="row" style="padding: 0;">
+				  						
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/BB FlashBack Pro Player.lnk.png" alt="" style="width: 100%;"/ >
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+											<img src="img/SIEMENS.png" alt="" style="width: 100%;" />
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/Haier.png" alt="" style="width: 100%;" />
+										</div>
+									</div>
+				  				</li>
+				  				<li class="item" style="padding: 0;margin-top: 20px;">
+				  					<div class="row" style="padding: 0;">
+				  						
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/BB FlashBack Pro Player.lnk.png" alt="" style="width: 100%;"/ >
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+											<img src="img/SIEMENS.png" alt="" style="width: 100%;" />
+										</div>
+										<div class="col" class="item-thumbnail-left" style="padding: 0;">
+				  							<img src="img/Haier.png" alt="" style="width: 100%;" />
+										</div>
+									</div>
+				  				</li>
+				  			</ul>
+				  		</div>
+				  </div>
+				  
+				</div>
+		    </ion-side-menu>
+		  </ion-side-menus>
+
+		
+		
+		
+		
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"]);
+			myApp.controller("myCon",function($scope,$ionicSideMenuDelegate) {
+				
+				$scope.toggleLeftSideMenu = function() {
+					$ionicSideMenuDelegate.toggleLeft();
+				};
+				
+				
+				$scope.getData = function() {
+					/**
+					 * ajax
+					 */
+					try {
+						$scope.books = books.concat($scope.books);
+					} finally {
+						setTimeout(function() {
+							//停止广播ion-refresher
+      						$scope.$broadcast('scroll.refreshComplete');
+						},2000);
+					}
+					
+					
+			
+				};
+			});
+		</script>
+	</body>
+</html>

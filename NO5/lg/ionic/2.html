@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js"></script>
+		<style type="text/css">
+			body{
+				background: #ccc;
+			}
+			.padding{
+				margin:100px auto ;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-positive">
+			<!--<button class="button button-clear ion-ios-arrow-back"></button>-->
+			<button class="button button-clear"><i class="icon ion-ios-arrow-back"></i></button>
+			<h1 class="title">新建地址</h1>
+		<button class="button button-clear"><i class="icon ion-navicon"></i></button>	
+		</div>
+			<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<ul class="list ">	
+			<label class="item item-input">
+				<input type="text" placeholder="联系人:" />
+			</label>
+			</ul>	
+			<ul class="list ">	
+			<label class="item item-input">
+				<input type="password" placeholder="联系方式:" />
+			</label>
+			</ul>
+			<ul class="list ">	
+			<label class="item item-input">
+				<input type="text" placeholder="所在地区:" />
+			</label>
+			</ul>
+			<ul class="list">	
+				<label class="item item-input">
+				<textarea name="" rows="5" placeholder="详细地址:"></textarea>
+			</label>
+			</ul>
+			<div class="padding">
+				<button class="button button-positive button-block">确定</button>
+			</div>
+			</div>
+	</body>
+	<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+</html>

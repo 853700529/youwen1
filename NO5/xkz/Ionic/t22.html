@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/ionic.css"/>
+		<style>
+			.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive{
+				margin-right: -12px;
+			}
+			body,html{
+				background-image:url(img/timg.jpg);
+				background-repeat: no-repeat;
+			
+				
+				
+			}
+			.myt{
+				color: #69717D !important;
+				font-family: "微软雅黑";
+			}
+			.myx{
+				margin-left: -90px;
+			}
+			
+			.myimg{
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				margin: 50px 110px;
+				text-align: center;
+			}
+			.myk{
+				opacity: 0.5;
+				margin-top: 15px!important;
+			}
+			.myl{
+				opacity: 0.5;
+			}
+			.myz{
+				margin-bottom: 100px;
+				opacity: 1!important;
+				
+			}
+			.mys{
+				margin-top: -15px;
+				opacity: 0.5;
+				
+			}
+			.card .item:last-child, .list-inset .item:last-child, .padding > .list .item:last-child{
+				border-radius:10px ;
+			}
+			.item{
+				padding: 10px;
+			}
+			.mypa{
+				margin-top: 5px;
+			}
+			.mya{
+				text-decoration: none;
+			}
+			.myimg1{
+				width: 50px;
+				height: 50px;
+				/*border-radius: 50%;*/
+				margin-left: 15px;
+				margin-top: 20px;
+				text-align: center;
+				float: left;
+			}
+			.myspan{
+				display: none;
+			}
+			.myj{
+				color: #FFFFFF!important;			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		
+		<div class="bar bar-header myo bar-clear">
+			<button class="button button-clear icon ion-ios-arrow-back "></button>
+			<h3 class="title">下载</h3>
+			<button class="button button-clear icon ion-person "></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+		<img src="img/Haier.png"  class="myimg"/>
+		<div style="text-align: center;color: #fff;margin-top: -40px;margin-bottom: 20px;">中国润东汽车集团有限公司</div>
+		<div style="color: #fff;text-align: center;font-family: '微软雅黑';margin-top: 10px;">
+			遥控器是一种用来远控机械的装置。现代的遥控器，主要是由集成电路电板和用来产生不同讯息主要是由集成电路电板和用来产生不同遥控器是一种用来远控机械的装置。现代的遥控器，主要是由集成电路电板和用来产生不同讯息主要是由集成同讯
+			
+			<span ng-hide="show">（传播学中的讯息定义：由一组相互关联的有意义符号组成，能够表达某种完整意义的信息。）的按</span><button  class="button button-clear myj" style="padding-bottom: 20px;" ng-click="myshow()">{{bian}} <i ng-show="show" class="icon ion-chevron-down" style="margin-bottom:-50px;font-family: '微软雅黑';" ></i><i ng-hide="show" class="icon ion-chevron-up" style="margin-bottom:-50px;font-family: '微软雅黑';" ></i></button>
+			<!--<button ng-hide="show" class="button button-clear myj" style="padding-bottom: 20px;" ng-click="myshow()">点击收起 <i class="icon ion-chevron-down" style="margin-bottom:-50px;" ng-show="show"></i></button>
+		</div>-->
+		<div class="padding mypa">
+			<button type="button" class="button button-block button-calm"/>已下载乐趣做App，请点击下载观看</button>
+			<button type="button" class="button button-block button-balanced"/>已下载乐趣做App，请点击下载观看</button>
+			
+		</div>
+		
+		
+		</div>
+		
+	</body>
+	<script>
+		var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myCon",function($scope) {
+				$scope.show=true;
+				$scope.bian="点击展开";
+				$scope.myshow=function(){
+					$scope.show=!$scope.show;
+					if($scope.show==true){
+						$scope.bian="点击展开";
+						$scope.r
+					}else{
+						$scope.bian="点击收起"
+					}
+					
+				}
+					
+			});
+	</script>
+</html>

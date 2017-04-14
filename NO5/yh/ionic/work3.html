@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		
+		<title>新建地址</title>
+
+		<link rel="stylesheet" href="css/ionic.min.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style>
+			body{background: #C0C0C0;}
+		</style>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear">
+				<i class="icon ion-ios-arrow-back"></i>
+			</button>
+			<h1 class="title">新建地址</h1>
+			<button class="button button-clear">
+				<i class="icon ion-navicon"></i>
+			</button>
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<ul class="list">
+				<li class="item">
+					<span style="margin-left: 14px;">联系人：</span>
+				</li>
+				<div class="item" style="margin-top: 20px;">
+					<span>联系方式：</span>
+				</div>
+				<div class="item" style="margin-top: 20px;">
+					<span>所在地区：</span>
+				</div>
+				<div class="item" style="margin-top: 20px;height: 150px;">
+					<span>详细地址：</span>
+				</div>
+				
+			</ul>
+		</div>
+		
+		
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myCon",function() {
+					
+			});
+		</script>
+	</body>
+</html>

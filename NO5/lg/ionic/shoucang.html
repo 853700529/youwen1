@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css" />
+		<script src="js/ionic.bundle.js"></script>
+		<style type="text/css">
+			body,
+			html {
+				background-image: url(img/tab3-bg.png);
+				background-repeat: no-repeat;
+			}
+			
+			.reg {
+				width: 155px;
+				height: 160px;
+				margin: 20px auto;
+			}
+			
+			.full-image {
+				border-radius: 50%;
+			}
+			
+			.card {
+				opacity: 0.5;
+			}
+			
+			.spn {
+				text-align: center;
+			}
+			
+			.bar.bar-clear .title {
+				color: #777;
+			}
+			
+			.bar .button.button-clear,
+			.bar button.button-clear {
+				color: #CCCCCC;
+			}
+		</style>
+	</head>
+
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-clear">
+			<button class="button button-clear button-calm"><i class="icon ion-ios-arrow-back"></i></button>
+			<h1 class="title">乐趣玩</h1>
+			<button class="button button-clear">注册</button>
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="reg">
+				<img class="full-image" src="img/nan.jpg" />
+			</div>
+			<div class="spn">无师自通-创业中</div>
+			<div class="button-bar padding">
+				<button class="button button-light button-small">100<br/>视频</button>
+				<button class="button button-light button-small">100<br/>订阅</button>
+				<button class="button button-light button-small">150<br/>收藏</button>
+			</div>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-android-star-outline" ng-click="showConfirm()"></button>
+				</a>
+				<div class="list">
+					<a class="item item-thumbnail-left" href="#">
+						<img src="img/guo.jpg">
+						<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					</a>
+				</div>
+			</ul>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-android-star-outline" ng-click="showConfirm()"></button>
+				</a>
+				<div class="list">
+					<a class="item item-thumbnail-left" href="#">
+						<img src="img/guo.jpg">
+						<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					</a>
+				</div>
+			</ul>
+			<ul class="list ">
+				<a href="#" class="item item-button-right">
+					2017-04-10
+					<button class="button button-assertive button-clear ion-android-star-outline" ng-click="showConfirm()"></button>
+				</a>
+				<div class="list">
+					<a class="item item-thumbnail-left" href="#">
+						<img src="img/guo.jpg">
+						<h2>锅头锅头锅头锅头锅头锅头锅头锅头锅头</h2>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+						<p>有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖有谁买卖</p>
+					</a>
+				</div>
+			</ul>
+		</div>
+
+	</body>
+	<script>
+		var myApp = angular.module('myApp', ['ionic']);
+		myApp.controller("myContro", function($scope, $ionicPopup, $timeout) {
+
+			$scope.showConfirm = function() {
+				var confirmPopup = $ionicPopup.confirm({
+					title: '是否取消收藏',
+					cancelText: '取消', // String (默认: 'Cancel')。一个取消按钮的文字。
+					okText: '确定', // String (默认: 'OK')。OK按钮的文字。
+				});
+
+			};
+		});
+	</script>
+
+</html>

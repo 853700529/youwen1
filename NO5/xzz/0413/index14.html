@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				font-family: "微软雅黑";	
+				background-color: #eee;
+			}
+			.myColor{
+				opacity: 0.5;
+			}
+			.myColor1{
+				color: #fff;
+			}
+			.myImg{
+				margin-right: 40px;
+				margin-top: 5px;
+			}
+			.mgMar{
+				background-image: url(img/2.jpg);
+				background-repeat: no-repeat;
+				width: 100%;
+				height: 300px;
+				padding-top: 70px;
+				font-size: 20px;
+			}
+			.myImg1{
+				width: 100px;
+				height: 80px;
+				text-align: center;
+				border: 1px solid #fff;
+				border-radius: 50%;
+			}
+			.myJia{
+				font-size: 50px;
+				line-height: 50px;
+			}
+			.myJia1{
+				font-size: 10px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-clear">
+			<a class="button icon ion-ios-arrow-back button-clear"></a>
+			<h3 class="title">智能管家</h3>
+			<a class="button button-clear">帮助</a>
+		</div>
+		
+		<div class="content scroll scroll-content" style="overflow-y: scroll;">
+			
+			<div class="mgMar row">
+				<div class="col col-20 light myImg1">
+					<div class="myJia1">
+						已接受</br>
+						1456</br>
+						设备消息
+					</div>
+				</div>
+				<div class="col col-50 light myImg1">
+					已绑定</br>
+					100</br>
+					设备</br>
+				</div>
+				<div class="col col-20 light myImg1">
+					<div class="myJia">+</div>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-arrow-shrink"></i>
+					海尔234空调
+					<span class="badge badge-assertive">1</span>
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-arrow-shrink"></i>
+					美的345电饭煲
+					<span class="badge badge-assertive">20</span>
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			<div class="list">
+				<div class="item item-icon-left item-icon-right">
+					<i class="icon ion-arrow-shrink"></i>
+					苹果iphone
+					<span class="badge badge-assertive">1</span>
+					<i class="icon ion-ios-arrow-forward"></i>
+				</div>
+			</div>
+			
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

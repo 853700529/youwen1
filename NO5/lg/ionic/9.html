@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/ionic.css"/>
+		<script src="js/ionic.bundle.js"></script>
+		<style type="text/css">
+		body{
+			background: url(img/tab3-bg.png) repeat center center;
+		}
+		.reg{
+			width: 155px;
+			height: 150px;
+			margin: 40px auto;
+			
+		}
+		.full-image{
+			border-radius:15% ;
+			
+		}
+		.edg{
+			opacity: 0.5;
+			margin: 60px auto;
+		}
+		.padding{
+			width: 90%;
+			margin: 30px auto;
+		}
+		.button-clear.button-clear{
+				color: #000000;
+				font-size: 26px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<div class="bar bar-header bar-clear">
+			<button class="button button-clear">
+			<i class="icon ion-ios-arrow-back"></i>
+			</button>
+			<h1 class="title">找回密码</h1>
+		    <button class="button button-clear"><i class="icon ion-ios-more"></i></button>	
+		</div>
+		<div class="content has-header has-footer scroll scroll-content" style="overflow-y: scroll;">
+			<div class="edg">
+			<div class="item-input">
+			<label class="item-input-wrapper">
+				<input type="text" placeholder="请输入您的手机号" />
+			</label>
+			<button class="button button-small button-positive" style="margin-right: 10px;">获取验证码</button>
+		</div>
+			<div class="card">
+				<label class="item item-input">
+				<input type="text" placeholder="请输入验证码" />
+			</label>
+			</div>
+			<div class="card">
+				<label class="item item-input">
+				<input type="text" placeholder="密码最少为6位" />
+			</label>
+			</div>
+			<div class="card">
+				<label class="item item-input">
+				<input type="text" placeholder="在次输入密码" />
+			</label>
+			</div>
+			</div>
+			<div class="padding">
+			<button class="button button-positive button-block">确定</button>
+		</div>
+		</div>
+			
+		
+			
+	</body>
+	<script>
+			var myApp = angular.module("myApp",["ionic"])
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Hello Ionic</title>
+		<link rel="stylesheet" href="css/ionic.css" />
+		<script src="js/ionic.bundle.min.js"></script>
+		<style>
+			body,html{
+				/*background-image: url(img/timg.jpg);
+				background-repeat: no-repeat;*/
+				font-family: "微软雅黑";
+				color: #FFFFFF;
+				text-align: center;
+				color: #000000;
+			}
+			.myColor{
+				opacity: 0.5;
+			}
+			.Opacity{
+				opacity: 0.5;
+				color: #ffffff;
+			}
+			.item-input-inset .item-input-wrapper input {
+				height: 50px;
+				color: #FFFFFF;
+				font-size: 20px;
+				line-height: 50px;
+			}
+			.button-small {
+				height: 50px;
+				font-size: 16px;
+				border-radius: 10px;
+			}
+			.button.button-calm {
+				border-radius: 10px;
+				
+			}
+			.item-input-wrapper{
+				border-radius: 10px;
+			}
+			.cont1{
+				width: 70%;
+				height: 220px;
+				margin: 10px auto;
+				border-radius: 50%;
+				padding-top: 50px;
+				border: 1px solid orange;
+			}
+			.cont1 img{
+				width: 80px;
+				height: 120px;
+			}
+		</style>
+	</head>
+	<body ng-controller="myContro">
+		<!--
+        	头部
+        -->
+		<div class="bar bar-header bar-clear">
+			<a class="button button-clear button-dark">关闭</a>
+		</div>
+		<!--内容-->
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+			<div class="row cont1">
+				<img src="img/4biao.jpg" class="col col-20 col-offset-25"/>
+				<span class="icon ion-checkmark-round balanced col col-10 col-center"></span>
+				<img src="img/3biao.jpg" class="col col-20"/>
+			</div>
+			 <h5>即刻让你的家电、数码、爱车...,享受智能管家服务</h5>
+			 <div class="row">
+			 	<span class="col col-40 col-offset-25 ion-checkmark-round balanced">设备养护只能提醒</span>
+			 </div>
+			 <div class="row">
+			 	<span class="col col-40 col-offset-25 ion-checkmark-round balanced">设备养护只能提醒</span>
+			 </div>
+			 <div class="row">
+			 	<!--<span class="col col-20"></span>-->
+			 	<span class="col col-40 col-offset-25 ion-checkmark-round balanced">设备养护只能提醒</span>
+			 </div>
+			 <div class="row">
+			 	<span class="col col-40 col-offset-25 balanced">...</span>
+			 </div>
+			 
+			 <div class="row">
+			 	<span class="col col-40 col-offset-25">现在让我们开启它</span>
+			 </div>
+			 <div class="padding">
+			 	<button class="button button-outline button-calm button-block">去开启</button>
+			 </div>
+
+		</div>
+
+		<script>
+			var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myContro",function() {
+					
+			});
+		</script>
+		
+		
+	</body>
+</html>

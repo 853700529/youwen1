@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		
+		<link rel="stylesheet" href="css/ionic.css"/>
+		<style>
+			.tabs .tab-item .badge.badge-assertive, .badge.badge-assertive{
+				margin-right: -12px;
+			}
+			body{
+				/*background: #eee;*/
+			}
+			.myt{
+				color: #ccc;
+				font-family: "微软雅黑";
+			}
+			.myx{
+				margin-left: -90px;
+			}
+			.item h2{
+				font-size: 24px !important;
+				font-weight: bold;
+			}
+		</style>
+		<script src="js/ionic.bundle.min.js"></script>
+	</head>
+	<body ng-controller="myCon">
+		<div class="bar bar-header bar-calm">
+			<button class="button button-clear icon ion-ios-arrow-back"></button>
+			<h3 class="title myt">消息详情</h3>
+			<button class="button button-clear icon ion-navicon"></button>
+		</div>
+		
+		<div class="content has-header scroll scroll-content" style="overflow-y: scroll;">
+		<div class="item">
+			<h2 class="myh">LOL新英雄介绍</h2>
+			<span>2017-04-10 21:00</span>
+			<div class="item-note">腾讯官方</div>
+		</div>
+		<div class="item item-body">
+			<p>洛最擅长的就是分散敌人的注意力，领着他的对手们踏出死亡的舞步。霞能够利用锐切快速地清理兵线。</p>
+			<img src="img/1491365440.jpg" class="full-image"/>
+			<p>首先看看女英雄的，没说的女英雄-霞颜值很高，技能也是很酷炫，又是一个超秀的英雄!首先是被动 切割之羽在施放技能過後，莎雅的下三次普攻會穿越路径上所有目标并在路径后方留下羽毛，持续8 秒首先看看女英雄的，没说的女英雄-霞颜值很高，技能也是很酷炫，又是一个超秀的英雄!首先是被动 切割之羽在施放技能過後，莎雅的下三次普攻會穿越路径上所有目标并在路径后方留下羽毛，持续8 秒首先看看女英雄的，没说的女英雄-霞颜值很高，技能也是很酷炫，又是一个超秀的英雄!首先是被动 切割之羽在施放技能過後，莎雅的下三次普攻會穿越路径上所有目标并在路径后方留下羽毛，持续8 秒首先看看女英雄的，没说的女英雄-霞颜值很高，技能也是很酷炫，又是一个超秀的英雄!首先是被动 切割之羽在施放技能過後，莎雅的下三次普攻會穿越路径上所有目标并在路径后方留下羽毛，持续8 秒</p>
+		</div>
+		</div>
+		
+	
+	</body>
+	<script>
+		var myApp = angular.module("myApp",["ionic"]);
+			
+			myApp.controller("myCon",function() {
+					
+			});
+	</script>
+</html>
